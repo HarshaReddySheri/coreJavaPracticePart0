@@ -3,12 +3,12 @@ import comSno1.harsha.package1.A;
 
 public class D extends A{
 	void f1() {		//we can't manage more than one package in a single file
-	    	System.out.println(a + b); 
-	    }
+		System.out.println(a + b); 
+	}
 }
 
 class E{
-	
+
 }
 
 

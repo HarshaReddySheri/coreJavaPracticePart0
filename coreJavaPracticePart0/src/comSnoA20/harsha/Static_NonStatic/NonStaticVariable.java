@@ -1,17 +1,17 @@
-package comSnoB20.harsha.NonStatic;//object creation needed
+package comSnoA20.harsha.Static_NonStatic;//object creation needed
 
 import java.util.Random;
 
-public class Test1 {
+public class NonStaticVariable {
 	int number;
 	public static void main(String[] args) {
-		Test1 t1 = new Test1();
+		NonStaticVariable t1 = new NonStaticVariable();
 		t1.number = new Random().nextInt();
 		
-		Test1 t2 = new Test1();
+		NonStaticVariable t2 = new NonStaticVariable();
 		t2.number = new Random().nextInt();
 		
-		Test1 t3 = new Test1();
+		NonStaticVariable t3 = new NonStaticVariable();
 		t3.number = new Random().nextInt();
 		
 		System.out.println(t1.number);

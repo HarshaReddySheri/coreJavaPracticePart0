@@ -73,11 +73,110 @@ public class Static_NonStatic {
 	 *  }
 	 *  
 	 * 2.How to specify static and nonStatic KeyWords on variables, Methods and blocks?
-	 * Ans:
+	 * Ans: we done all the codes, please see in static & non static package
 	 * 
 	 * 3.How do we access static variable or methods?
+	 * Ans: 
 	 * 
-	 * 4.understand the memory concept
+	 * Why we use static variables in java?
+	 * 
+	 * static variable are used for Memory management.
+	 * static variable are used for common property of all the object.
+	 * _________________ 
+	 *
+	 * Normal variables
+	 * _________________
+	 * 
+	 * company -----> parent
+	 * -------
+	 * em1  em2   -->class both are in same company
+	 * 
+	 * we create object for each employ
+	 * company name for all the object employ will be the same 
+	 * if defined normal variable in class with company name then every time we create an object 
+	 * java will allocate new memory for that object & class name variable
+	 * for 100 object ---> class name
+	 * 
+	 * variable java will 100 time memory allocated
+	 * 
+	 * even storing the same value that is name of company
+	 * 
+	 *
+	 * ________________
+	 * 
+	 * static variables
+	 * ________________
+	 * 
+	 * company -->parent
+	 * em1  em2 -->static className
+	 * 
+	 * Memory is only allocated at one time that is class loading
+	 * All other object will referred to the same memory location
+	 * defined as static in class this variable is belong to class not for employees
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * what is static method?
+	 * 1.static methods are also called as class methods
+	 * 			--> belong to class not to object
+	 * 2.static methods are used for memory management
+	 * 
+	 * Normal Method
+	 * ______________
+	 * 
+	 * 		  class
+	 * object1	   object2
+	 * |			|
+	 * NM			NM
+	 * 
+	 * When normal method is created then all the object have the separate copy of method 
+	 * because normal method belong to object
+	 * every time new object is created then memory will allocated for normal method
+	 * 
+	 * static Method
+	 * ______________
+	 * 
+	 * 			class
+	 * object1        object2 --both are static method
+	 * 
+	 * Use static method only one copy is created that one copy share among all the object.
+	 * 
+	 * 
+	 * FEATURES
+	 * ________
+	 * 
+	 * 1.Static Method can access and modify static variables
+	 * 2.We can access static method directly with class name
+	 * EG: classNAme.staticMethod();
+	 * 
+	 * Main Method in java is static so JVM can access it without object creation
+	 * 
+	 *    
+	 *  																						JVM MEMORY
+	 * 4.understand the memory concept												____________________________________Method Area___________
+	 * 																				| class1		 |class2	| class3	| ............... |
+	 * 																		Static	|static block	 |SB		|SB			| ............... |
+	 * 																				|static variables|SV		|SV			| ............... |
+	 *				  compile 				 run/execute							|static Methods	 |SM		|SM			| ............... |
+	 * Ans:Java File -----------> Class File -------------> Class Loader ---------->|________________|__________|___________|_________________|
+	 * 																				|									Heap Memory			  |	
+	 * 																				|object1		 |object2   |							  |				
+	 * 																				|variables       |variables |							  |
+	 * 																				|methods		 |Methods   |                  			  |	
+	 * 																				|_________________________________________________________|
+	 * 																				|_______________________________________stack Area________|										
+	 * 																				|_____________________________________PCRegisters_________|
+	 * 																				|_____________________________________NativeMethodStack___|
+	 * 	USE STATIC METHOD AREA
+	 * if u want's to share one memory to all object's or same instance
+	 * if u want's one variable must be same for every data
 	 * 
 	 * 
 	 */
